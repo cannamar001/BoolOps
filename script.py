@@ -73,26 +73,15 @@ if grade < 70:
     print("You got a F")
 
 
-print()
-print("CHALLENGE 2: WEATHER ADVISOR")
-print("-" * 40)
-print("Create a program that gives clothing advice based on weather conditions.")
-print("Rules:")
-print("  If temperature > 75 AND not raining: 'Wear shorts and a t-shirt!'")
-print("  If temperature <= 32 OR snowing: 'Wear a heavy coat and boots!'")
-print("  Otherwise: 'Dress comfortably!'")
-print()
 
-is_raining = False
-is_snowing = True
-temperature = int(input("Enter your temperature: "))
-if temperature > 75 and raining:
+temperature = 80
+is_raining = True
+is_snowing = False
+if temperature > 75 and not is_raining:
     print("Wear shorts and a t-shirt")
 else:
-    print("Wear a jacket and boots")
-
  if temperature <= 32 or is_snowing:
-    print("Wear a heavy coat and boots")
+     print("Wear a heavy coat and boots")
 else:
     print("Dress comfortably!")
 
